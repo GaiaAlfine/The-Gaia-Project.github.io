@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+}
+/* body, header, div, footer{
+    margin: 10px;
+    padding: 10px;
+    border: solid black 4px;
+} */
+#halo{
+    max-height: 200px;
+}
+@media (prefers-reduced-motion: no-preference) {
+    #halo {
+        animation: Halo-logo-spin infinite 20s linear;
+    }
+}
+  
+@keyframes Halo-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+header{
+    display: flex;
+    background-image: linear-gradient(rgb(255, 255, 255) , rgb(200, 200, 200));
+    color: rgb(0, 0, 0);
+    width: 100%;
+}
+h1{
+    font-size:500%;
+}
+#tab-holder{
+    display: flex;
+    background-color: #f1f1f1;
+}
+.tabs{
+    width: 10%;
+}
+.sidepanel {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 1;
+    left: 0;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidepanel a:hover {
+    color: #000000;
+}
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+}
+.openbtn:hover {
+    background-color: #a8a8a8;
+}
