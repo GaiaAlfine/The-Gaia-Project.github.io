@@ -1,0 +1,151 @@
+/* header, body, footer, div{
+    border: solid red 1px;
+    padding: 5px;
+    margin: 5px;
+} */
+body{
+    background-color: black;
+    color: red;
+}
+header{
+    display: flex;
+}
+#logo{
+    max-width: 6.5rem;
+}
+h1{
+    font-size: 2.5rem;
+}
+#red-line{
+    padding: 1px;
+    background-color: red;
+}
+#google{
+    align-content: center;
+}
+input{
+    height: 50px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    color: red;
+    align-self: center;
+    font-style: normal;
+}
+button{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    color: red;
+    background: transparent;
+}
+#boxes{
+    display: flex;
+}
+#box-left-boxes{
+    display: flex;
+    flex-direction: column;
+    border: solid red 1px;
+}
+.middle-box{
+    width: 100%;
+}
+.left-box{
+    border: solid red 1px;
+    margin: 1px;
+    padding: 2rem;
+}
+.inner-art-a{
+    display: flex;
+}
+.outer-art{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+#art-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: solid red 1px;
+    margin: 5px;
+    padding: 5px;
+    align-items: center;
+}
+#art-box-image{
+    width: 3rem;
+}
+#art-img{
+    width: 100%;
+}
+.r-box-fix{
+    display: flex;
+    flex-direction: row;
+}
+.right-box{
+    display: flex;
+    flex-direction: column;
+    border: solid red 1px;
+}
+#top-right-box{
+    margin: 5px;
+    align-self: center;
+}
+#right-link-box{
+    border: solid red 1px;
+    margin: 5px;
+    padding: 5px;
+    height: 100%;
+}
+.header{
+    padding: 10px;
+}
+#big-text{
+    text-align: center;
+}
+a:link {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: pink;
+    background-color: transparent;
+    text-decoration: underline;
+}
+@media screen and (max-width: 800px) {
+    #boxes{
+        display: flex;
+        flex-direction: column;
+    }
+    .inner-art-a{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    #art-box{
+        display: flex;
+        flex-direction: column;
+        border: solid red 1px;
+        margin: 5px;
+        padding: 5px;
+        width: 95%;
+    }
+    #logo{
+        width: 21vw;
+    }
+    h1{
+        font-size: 9vw;
+    }
+}
