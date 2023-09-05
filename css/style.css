@@ -6,15 +6,22 @@ body {
     padding: 10px;
     border: solid black 4px;
 } */
+header{
+    display: flex;
+    background-image: linear-gradient(white, #b9b9b9);
+}
 #halo{
-    max-height: 200px;
+    width: 200px;
+    height: 200px;
+}
+h1{
+    font-size: 80px;
 }
 @media (prefers-reduced-motion: no-preference) {
-    #halo {
+    #halo, #react {
         animation: Halo-logo-spin infinite 5s linear;
     }
 }
-  
 @keyframes Halo-logo-spin {
     from {
         transform: rotate(0deg);
@@ -23,23 +30,6 @@ body {
         transform: rotate(360deg);
     }
 }
-header{
-    display: flex;
-    background-image: linear-gradient(rgb(255, 255, 255) , rgb(200, 200, 200));
-    color: rgb(0, 0, 0);
-    width: 100%;
-}
-h1{
-    font-size:500%;
-}
-#tab-holder{
-    display: flex;
-    background-color: #f1f1f1;
-}
-.tab{
-    color: black;
-}
-/* Style the button that is used to open and close the collapsible content */
 .collapsible {
     background-color: #eee;
     color: #444;
@@ -50,42 +40,38 @@ h1{
     text-align: left;
     outline: none;
     font-size: 15px;
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .collapsible:hover {
+}
+.active, .collapsible:hover {
     background-color: #ccc;
-  }
-  
-  /* Style the collapsible content. Note: hidden by default */
-  .content {
+}
+.content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
 }
 #body-box{
-    padding: 20px;
     display: flex;
-    height: auto;
-    align-content:flex-start;
+    align-content: center;
+    margin: 2rem;
 }
 .box{
-    background-color: #f1f1f1;
-    padding: 1rem;
+    border: solid #ffffff 10px;
+    padding: 10px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    max-width: 20rem;
-    align-self: auto;
-    margin: 1rem;
+    align-items: center;
+    background-color: #f1f1f1;
+
+}
+#text-box{
+
 }
 #box-img{
-    width: auto;
-    height: auto;
-    max-width: 20rem;
-    /* border: solid #e0e0e0; */
+
 }
 footer{
-    padding: 10px;
     background-color: #f1f1f1;
+    padding: 10px;
 }
