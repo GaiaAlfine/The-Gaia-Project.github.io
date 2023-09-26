@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 - Gaia's Portfolio</title>
+    <link rel="stylesheet" href="pro-1/main.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Project 1</h1>
+        <h5>date:00.00.0000</h5>
+    </div>
+    <div id="content">
+        <div id="project-info">
+            <h2>Project Details</h2>
+            <p>This is where you can provide a detailed description of your project. You can explain its goals, features, and any challenges you faced during its development.</p>
+        
+            <h2>Code</h2>
+    <button onclick="showPopup()">Show Code</button>
+
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                  <span class="close" onclick="closePopup()">&times;</span>
+                  <pre>
+                    <code>
+                        // Your code here
+                        function helloWorld() {
+                            console.log("Hello, World!");
+                        }
+                    </code>
+                </pre>
+                </div>
+              </div>
+
+            <h2>Project Screenshots</h2>
+            <img id="project-image" src="pro-1/img/full/img.png" alt="Project 1 Screenshot" />
+
+            <h2>Project Links</h2>
+            <p>You can include links to the project's website, GitHub repository, or any other relevant resources.</p>
+        </div>
+        
+        <a id="back-link" href="../index.html">Back to Projects</a>
+    </div>
+    <script src="pro-1/js/pro-scr.js"></script>
+</body>
+</html>
