@@ -64,3 +64,14 @@ body {
     cursor: pointer;
   }
   
+img{
+    margin: auto;
+    padding: 10px;
+    background-color: aliceblue;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: gray;
+}

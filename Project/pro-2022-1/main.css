@@ -45,31 +45,22 @@ body {
     height: 100%;
     background-color: rgba(0,0,0,0.7);
     z-index: 1;
-}
+  }
   
-.popup-content {
+  .popup-content {
     position: relative;
     margin: 15% auto;
     padding: 20px;
     background-color: #fff;
     width: 30%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-.close {
+  }
+  
+  .close {
     position: absolute;
     top: 0;
     right: 10px;
     font-size: 18px;
     cursor: pointer;
-}
-img{
-    margin: auto;
-    padding: 10px;
-    background-color: aliceblue;
-}
-a{
-    color: black;
-}
-a:hover{
-    color: gray;
-}
+  }
+  

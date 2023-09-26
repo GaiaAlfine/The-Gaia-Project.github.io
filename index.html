@@ -9,35 +9,52 @@
 <body>
     <div id="sidebar">
         <h2>Projects</h2>
-        <h2>2023</h2>
-        <a href="Project/Project-1.html">Project 1</a>
-        <a href="Project/Project-2.html">Project 2</a>
-        <a href="Project/Project-3.html">Project 3</a>
-        <h2>2022</h2>
-        <a href="Project/Project-1.html">Project 1</a>
-        <a href="Project/Project-2.html">Project 2</a>
-        <a href="Project/Project-3.html">Project 3</a>
+        <button onclick="slide()" id="sideTab"><h2>2023</h2></button>
+        <div id="slideTab" class="hidden">
+            <a href="Project/Project-1.html">Rock Paper Scissors</a>
+            <a href="Project/Project-4.html">Counter</a>
+            <a href="Project/Project-2.html">React programmering_intro</a>
+            <a href="Project/Project-3.html">Digital Clock</a>
+            
+        </div>
+          <button onclick="slide2()" id="sideTab"><h2>2022</h2></button>
+        <div id="slideTab2" class="hidden">
+            <a href="Project/Project-2022-1.html">Project 2022 1</a>
+            <a href="Project/Project-2022-2.html">Project 2022 2</a>
+            <a href="Project/Project-2022-3.html">Project 2022 3</a>
+        </div>
     </div>
     <div id="content">
         <header>
             <h1>Gaia H Alfine</h1>
-            <img src="your-icon.png" alt="Your Icon" width="100">
+            <img src="icon.png" alt="Your Icon" width="100">
         </header>
+        <section id="project3">
+            <h2>Rock Paper Scissors</h2>
+            <h5>date:22.09.2023</h5>
+            <p>I made Rock Paper Scissors in React.</p>
+        </section>
+        <section id="project4">
+            <h2>Counter</h2>
+            <h5>date:16.09.2023</h5>
+            <p>I made a Counter in React.</p>
+        </section>
         <section id="project1">
-            <h2>Project 1</h2>
-            <h5>date:00.00.0000</h5>
-            <p>Your project description goes here.</p>
+            <h2>React programmering_intro</h2>
+            <h5>date:05.09.2023</h5>
+            <p>Here i learned the basics of react.</p>
         </section>
         <section id="project2">
-            <h2>Project 2</h2>
-            <h5>date:00.00.0000</h5>
-            <p>Your project description goes here.</p>
+            <h2>Digital Clock</h2>
+            <h5>date:05.09.2023</h5>
+            <p>Here i learned how to add a clock into react.</p>
         </section>
-        <section id="project3">
+        <!-- <section id="project3">
             <h2>Project 3</h2>
             <h5>date:00.00.0000</h5>
             <p>Your project description goes here.</p>
-        </section>
+        </section> -->
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
