@@ -1,23 +1,14 @@
-function slide() {
-    const slideTab = document.getElementById("slideTab");
-    
-    if (slideTab.classList.contains("hidden")) {
-      slideTab.classList.remove("hidden");
-      slideTab.classList.add("visible");
-    } else {
-      slideTab.classList.remove("visible");
-      slideTab.classList.add("hidden");
-    }
+function toggleNav() {
+  var sidebar = document.getElementById("mySidebar");
+  var btn = document.querySelector(".toggle-btn");
+
+  if (sidebar.style.width === '250px') {
+    sidebar.style.width = '0';
+    btn.style.left = '0';
+    btn.innerHTML = '☰';
+  } else {
+    sidebar.style.width = '250px';
+    btn.style.left = '250px';
+    btn.innerHTML = '☰';
+  }
 }
-function slide2() {
-    const slideTab = document.getElementById("slideTab2");
-    
-    if (slideTab.classList.contains("hidden")) {
-      slideTab.classList.remove("hidden");
-      slideTab.classList.add("visible");
-    } else {
-      slideTab.classList.remove("visible");
-      slideTab.classList.add("hidden");
-    }
-}
-  
