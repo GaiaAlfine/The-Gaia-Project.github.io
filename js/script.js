@@ -13,7 +13,7 @@ function toggleNav() {
   } else {
     sidebar.style.width = '250px';
     btn.style.left = '250px';
-    btn.innerHTML = '×';
+    btn.innerHTML = '☰';
   }
 
   // Remove transition after a delay equal to the transition duration
@@ -52,11 +52,11 @@ window.onscroll = function() {
   // Calculate the bottom position of the header
   var headerBottom = header.offsetTop + header.offsetHeight;
 
-  if (window.pageYOffset > headerBottom) {
+  if (window.scrollY > headerBottom) {
     sidebar.style.top = '0';
-    btn.style.top = '10px';
+    btn.style.top = '0px';
   } else {
-    sidebar.style.top = (headerBottom - window.pageYOffset) + 'px';
-    btn.style.top = (headerBottom - window.pageYOffset + 10) + 'px';
+    sidebar.style.top = (headerBottom - window.scrollY) + 'px';
+    btn.style.top = (headerBottom - window.scrollY + 0) + 'px';
   }
 };
