@@ -147,10 +147,32 @@ header{
 }
 .submenu {
   display: none;
-  padding-left: 20px;
-  
+  padding-left: 20px; 
 }
-
 .tab-item {
   cursor: pointer;
+}
+.toptextrow{
+  display: flex;
+}
+#topimage{
+  position: absolute;
+  width: 80%;
+  border: solid black 10px;
+}
+.topbox{
+  margin: 10px;
+  width: auto;
+  height: 40rem;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.toptext{
+  padding-left: 20px;
+  overflow: hidden;
+  border-left: solid white 1px;
+  width: 40%;
 }
