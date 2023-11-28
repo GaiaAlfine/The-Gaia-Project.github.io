@@ -138,3 +138,19 @@ header{
 .toggle-btn:hover {
   background-color: #444;
 }
+.letter {
+  opacity: 0.8; /* Initial lower opacity */
+  transition: opacity 0.5s;
+}
+.opaque {
+  opacity: 1; /* Full opacity when hovered */
+}
+.submenu {
+  display: none;
+  padding-left: 20px;
+  
+}
+
+.tab-item {
+  cursor: pointer;
+}

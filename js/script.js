@@ -60,3 +60,15 @@ window.onscroll = function() {
     btn.style.top = (headerBottom - window.scrollY + 0) + 'px';
   }
 };
+document.addEventListener('DOMContentLoaded', function() {
+  var tabItems = document.querySelectorAll('.tab-item');
+
+  tabItems.forEach(function(item) {
+      item.addEventListener('click', function() {
+          var nextElement = this.nextElementSibling;
+          if (nextElement && nextElement.classList.contains('submenu')) {
+              nextElement.style.display = nextElement.style.display === 'block' ? 'none' : 'block';
+          }
+      });
+  });
+});
