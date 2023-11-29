@@ -1,7 +1,58 @@
-body{
-  margin: 0;
-  background-image: linear-gradient(to bottom right, #100020, #000000, #100010);
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+  background-color: #111;
   color: white;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #200 50%, #002 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  /* background-color:rgba(255, 255, 255, 0.342); */
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
 }
 /* header, footer, div{
   margin: 10px;
@@ -10,7 +61,8 @@ body{
 } */
 header{
   display: flex;
-  background-image: linear-gradient(to bottom right, #010101, #000000, #010101);
+  background-color: #000000;
+  /* background-image: linear-gradient(to bottom right, #010101, #000000, #010101); */
   padding: 10px 30px 10px 30px;
   height: 10rem;
 }
@@ -25,10 +77,11 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-right: 20%;
-  width: 100%;
+  /* padding-right: 20%; */
+  margin-left: 2%;
+  width: auto;
   text-align: center;
-  font-size: 122%;
+  font-size: 200%;
 }
 .row{
   display: flex;
@@ -173,12 +226,38 @@ header{
   /* align-items: center; */
   justify-content: center;
 }
+#slideimage{
+  border-radius: 5%;
+  /* background-color: #000; */
+  /* margin: 10rem; */
+}
 .toptext{
+  height: 25rem;
   margin: 1% 10% 1% 10%;
   padding-left: 20px;
   overflow: hidden;
   border-left: solid white 1px;
   width: 40%;
+  background-color: #000;
+  margin: 1rem 10rem 1rem 1rem;
+  padding: 1rem 2rem 2rem 2rem;
+  /* border-radius: 5%; */
+  transition: 0.3s;
+}
+.topposs{
+  margin: 1% 10% 1% 10%;
+  padding-left: 20px;
+  overflow: hidden;
+  /* border-left: solid white 1px; */
+  width: 40%;
+  background-color: #000;
+  margin: 1rem 10rem 1rem 1rem;
+  padding: 1rem 2rem 2rem 2rem;
+  border-radius: 5%;
+  transition: 0.3s;
+}
+.topposs:hover{
+  box-shadow: 0rem 0.0rem 0px 0.5rem #fff;
 }
 ::-webkit-scrollbar {
   width: 20px;
@@ -209,6 +288,7 @@ header{
   opacity: 0;
   transition: opacity 1s, transform 1s;
   transform: translateX(-100%); /* Start off-screen to the left */
+  /* background-color: #fff; */
 }
 
 .slide-active {
