@@ -11,18 +11,21 @@ body{
 header{
   display: flex;
   background-image: linear-gradient(to bottom right, #010101, #000000, #010101);
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 30px 10px 30px;
+  height: 10rem;
 }
 .logo-image{
   width: 100%;
 }
 #header-class-1{
-  max-width: 5%;
+  width: 10rem;
+  overflow: hidden;
 }
 #header-class-2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20%;
   width: 100%;
   text-align: center;
   font-size: 122%;
@@ -171,8 +174,54 @@ header{
   justify-content: center;
 }
 .toptext{
+  margin: 1% 10% 1% 10%;
   padding-left: 20px;
   overflow: hidden;
   border-left: solid white 1px;
   width: 40%;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  background: #333;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #222;
+  border-radius: 6px;
+  border: 3px solid #333;
+}
+#slideshow {
+  margin: 1% 10% 1% 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 40rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s, transform 1s;
+  transform: translateX(-100%); /* Start off-screen to the left */
+}
+
+.slide-active {
+  opacity: 1;
+  transform: translateX(0); /* Slide in from left */
+}
+
+.slide-leave {
+  opacity: 0;
+  transform: translateX(100%); /* Slide out to the right */
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
 }

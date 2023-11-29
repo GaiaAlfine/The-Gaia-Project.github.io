@@ -72,4 +72,31 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
+let slideIndex = 0;
+let slides = document.getElementsByClassName("slide");
+let numOfSlides = slides.length;
+showSlides();
+
+function showSlides() {
+    // Remove 'slide-active' and 'slide-leave' from all slides
+    for (let i = 0; i < numOfSlides; i++) {
+        slides[i].className = "slide";
+    }
+    
+    // Calculate next index (with wrapping)
+    let nextIndex = (slideIndex + 1) % numOfSlides;
+
+    // Add 'slide-active' to the next slide
+    slides[nextIndex].classList.add("slide-active");
+
+    // Add 'slide-leave' to the current slide if it's not the first iteration
+    if (slideIndex !== -1) {
+        slides[slideIndex].classList.add("slide-leave");
+    }
+
+    // Update the slide index for the next iteration
+    slideIndex = nextIndex;
+
+    setTimeout(showSlides, 10000); // Change image every 3 seconds
+}
 
