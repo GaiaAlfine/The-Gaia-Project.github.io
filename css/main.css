@@ -87,8 +87,8 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
-  margin-left: 7.5%;
+  /* padding: 30px; */
+  /* margin-left: 7.5%; */
 }
 .imagebox{
   width: 30rem;
@@ -238,10 +238,10 @@ header{
   padding-left: 20px;
   overflow: hidden;
   border-left: solid white 1px;
-  width: 80%;
+  width: 90%;
   background-color: #000;
   margin: 1rem 10rem 1rem 1rem;
-  padding: 1rem 2rem 2rem 2rem;
+  /* padding: 1rem 2rem 2rem 2rem; */
   /* border-radius: 5%; */
   transition: 0.3s;
 }
@@ -253,13 +253,16 @@ header{
   /* border-left: solid white 1px; */
   width: 40%;
   background-color: #000;
-  margin: 1rem 10rem 1rem 1rem;
+  margin: 1rem 1rem 1rem 1rem;
   padding: 1rem 2rem 2rem 2rem;
   border-radius: 5%;
   transition: 0.3s;
 }
-.topposs:hover{
+/* .topposs:hover{
   box-shadow: 0rem 0.0rem 0px 0.5rem #fff;
+} */
+p:hover, h2:hover, li:hover{
+  border-bottom: solid #ffffff 1px;
 }
 ::-webkit-scrollbar {
   width: 20px;
@@ -306,4 +309,30 @@ header{
 .slide img {
   width: 100%;
   height: auto;
+}
+/* @media (min-width: 600px) {
+  .row {
+      display: flex;
+      flex-direction: column;
+  }
+} */
+@media (max-width: 906px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  #slideshow{
+    height: 20rem;
+  }
+  .topposs{
+    width: 70%;
+  }
+}
+div p span {
+  border-bottom: 1px solid black; /* Adjust the style of the underline as needed */
+  cursor: pointer;
+}
+
+div p {
+  display: inline; /* This makes sure the underline doesn't extend to the full width */
 }

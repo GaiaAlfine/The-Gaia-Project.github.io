@@ -99,4 +99,14 @@ function showSlides() {
 
     setTimeout(showSlides, 10000); // Change image every 3 seconds
 }
-
+$("div p").hover(function() {
+  // On hover, find the index of the period
+  var periodIndex = $(this).text().indexOf('.');
+  // Extract the text up to the period
+  var textUpToPeriod = $(this).text().substring(0, periodIndex + 1);
+  // Wrap that part in a span for styling
+  $(this).html('<span>' + textUpToPeriod + '</span>' + $(this).text().substring(periodIndex + 1));
+}, function() {
+  // When not hovered, remove the span
+  $(this).text($(this).text());
+});
