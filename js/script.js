@@ -109,4 +109,4 @@ $("div p").hover(function() {
 }, function() {
   // When not hovered, remove the span
   $(this).text($(this).text());
-})
+});

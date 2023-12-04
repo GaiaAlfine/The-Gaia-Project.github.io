@@ -1,0 +1,236 @@
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+  background-color: #111;
+  color: white;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #200 50%, #002 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  /* background-color:rgba(255, 255, 255, 0.342); */
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+body{
+    margin: 0;
+    color: white;
+  }
+  /* header, footer, div{
+    margin: 10px;
+    padding: 10px;
+    border: solid white 1px;
+  } */
+  header{
+    display: flex;
+    background-color: #000000;
+    /* background-image: linear-gradient(to bottom right, #010101, #000000, #010101); */
+    padding: 10px 30px 10px 30px;
+    height: 10rem;
+  }
+  .logo-image{
+    width: 100%;
+  }
+  #header-class-1{
+    width: 10rem;
+    overflow: hidden;
+  }
+  #header-class-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-right: 20%; */
+    margin-left: 2%;
+    width: auto;
+    text-align: center;
+    font-size: 200%;
+  }
+  .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+  /* .imagebox:hover{
+    background-color: white;
+  } */
+  .imageboximage{
+    width: 100%;
+    height: 100%;
+  }
+  .imagebox {
+    width: 30rem;
+    height: 30rem;
+    text-align: center;
+    border: solid white 1px;
+    margin: 20px;
+    position: relative;
+    display: flex; /* Changed to flex */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #000;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.imagebox img {
+    width: 200%; /* Ensure the image doesn't exceed the container's width */
+    height: 100%; /* Ensure the image doesn't exceed the container's height */
+    /* overflow: hidden; */
+    transition: opacity .3s ease; /* smooth transition for the hover effect */
+    /* Removed width and height properties to let flexbox handle the centering */
+}
+  .hover-text{
+    display: flex;
+    flex-direction: column;
+  }
+  .imagebox .hover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+    background: #000; /* semi-transparent background */
+    color: #ffffff; /* text color */
+    font-size: 20px; /* size of the text */
+    padding: 10px; /* spacing around the text */
+  }
+  .imagebox:hover img {
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  
+  .imagebox:hover .hover-text {
+    opacity: 1;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    /* transition: 0.3s; */
+    transition: none; /* Remove or set to 'none' */
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .submenu {
+    display: none;
+    font-size: 20px;
+    margin-left: 30px;
+  }
+  
+  .toggle-btn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: fixed;
+    /* top: 20px; */
+    /* z-index: 2; */
+    /* transition: 0.5s; */
+    transition: none; /* Remove or set to 'none' */
+  
+  }
+  
+  .toggle-btn:hover {
+    background-color: #444;
+  }
+  .letter {
+    opacity: 0.8; /* Initial lower opacity */
+    transition: opacity 0.5s;
+  }
+  .opaque {
+    opacity: 1; /* Full opacity when hovered */
+  }
+  .submenu {
+    display: none;
+    padding-left: 20px;
+    
+  }
+  
+  .tab-item {
+    cursor: pointer;
+  }
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #333;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #222;
+    border-radius: 6px;
+    border: 3px solid #333;
+  }
+  ::-webkit-scrollbar-button{
+    background-color: #222;
+    border-radius: 6px;
+    border: 3px solid #333;
+  }
