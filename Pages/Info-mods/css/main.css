@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    background-image: linear-gradient(to bottom right, #100020, #000000, #100010);
+    color: white;
+  }
+  /* header, footer, div{
+    margin: 10px;
+    padding: 10px;
+    border: solid white 1px;
+  } */
+  header{
+    display: flex;
+    background-image: linear-gradient(to bottom right, #010101, #000000, #010101);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .logo-image{
+    width: 100%;
+  }
+  #header-class-1{
+    max-width: 5%;
+  }
+  #header-class-2{
+    width: 100%;
+    text-align: center;
+    font-size: 122%;
+  }
+  .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+  .imagebox{
+    width: 30rem;
+    height: 100%;
+    text-align: center;
+    border: solid white 1px;
+    margin: 20px;
+  }
+  /* .imagebox:hover{
+    background-color: white;
+  } */
+  .imageboximage{
+    width: 100%;
+    height: 100%;
+  }
+  .imagebox {
+    position: relative;
+    display: inline-block;
+    background-color: #000;
+  }
+  .imagebox img {
+    display: block;
+    width: 100%; /* or the width you desire */
+    height: auto; /* to maintain aspect ratio */
+    transition: opacity .3s ease; /* smooth transition for the hover effect */
+  }
+  .hover-text{
+    display: flex;
+    flex-direction: column;
+  }
+  .imagebox .hover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+    background: #000; /* semi-transparent background */
+    color: #ffffff; /* text color */
+    font-size: 20px; /* size of the text */
+    padding: 10px; /* spacing around the text */
+  }
+  .imagebox:hover img {
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  
+  .imagebox:hover .hover-text {
+    opacity: 1;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    /* transition: 0.3s; */
+    transition: none; /* Remove or set to 'none' */
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .submenu {
+    display: none;
+    font-size: 20px;
+    margin-left: 30px;
+  }
+  
+  .toggle-btn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: fixed;
+    /* top: 20px; */
+    /* z-index: 2; */
+    /* transition: 0.5s; */
+    transition: none; /* Remove or set to 'none' */
+  
+  }
+  
+  .toggle-btn:hover {
+    background-color: #444;
+  }
+  .letter {
+    opacity: 0.8; /* Initial lower opacity */
+    transition: opacity 0.5s;
+  }
+  .opaque {
+    opacity: 1; /* Full opacity when hovered */
+  }
+  .submenu {
+    display: none;
+    padding-left: 20px;
+    
+  }
+  
+  .tab-item {
+    cursor: pointer;
+  }

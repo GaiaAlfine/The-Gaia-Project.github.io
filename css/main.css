@@ -1,0 +1,343 @@
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+  background-color: #111;
+  color: white;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #200 50%, #002 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  /* background-color:rgba(255, 255, 255, 0.342); */
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+/* header, footer, div{
+  margin: 10px;
+  padding: 10px;
+  border: solid white 1px;
+} */
+header{
+  display: flex;
+  background-color: #000000;
+  /* background-image: linear-gradient(to bottom right, #010101, #000000, #010101); */
+  padding: 10px 30px 10px 30px;
+  height: 10rem;
+}
+.logo-image{
+  width: 100%;
+}
+#header-class-1{
+  width: 10rem;
+  overflow: hidden;
+}
+#header-class-2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-right: 20%; */
+  margin-left: 2%;
+  width: auto;
+  text-align: center;
+  font-size: 200%;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 30px; */
+  /* margin-left: 7.5%; */
+}
+.imagebox{
+  width: 30rem;
+  height: 100%;
+  text-align: center;
+  border: solid white 1px;
+  margin: 20px;
+}
+/* .imagebox:hover{
+  background-color: white;
+} */
+.imageboximage{
+  width: 100%;
+  height: 100%;
+}
+.imagebox {
+  position: relative;
+  display: inline-block;
+  background-color: #000;
+}
+.imagebox img {
+  display: block;
+  width: 100%; /* or the width you desire */
+  height: auto; /* to maintain aspect ratio */
+  transition: opacity .3s ease; /* smooth transition for the hover effect */
+}
+.hover-text{
+  display: flex;
+  flex-direction: column;
+}
+.imagebox .hover-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 1s ease;
+  background: #000; /* semi-transparent background */
+  color: #ffffff; /* text color */
+  font-size: 20px; /* size of the text */
+  padding: 10px; /* spacing around the text */
+}
+.imagebox:hover img {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.imagebox:hover .hover-text {
+  opacity: 1;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  /* transition: 0.3s; */
+  transition: none; /* Remove or set to 'none' */
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.submenu {
+  display: none;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.toggle-btn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  position: fixed;
+  /* top: 20px; */
+  z-index: 2;
+  /* transition: 0.5s; */
+  transition: none; /* Remove or set to 'none' */
+
+}
+
+.toggle-btn:hover {
+  background-color: #444;
+}
+.letter {
+  opacity: 0.8; /* Initial lower opacity */
+  transition: opacity 0.5s;
+}
+.opaque {
+  opacity: 1; /* Full opacity when hovered */
+}
+.submenu {
+  display: none;
+  padding-left: 20px; 
+}
+.tab-item {
+  cursor: pointer;
+}
+.toptextrow{
+  display: flex;
+}
+#topimage{
+  position: absolute;
+  width: 80%;
+  border: solid black 10px;
+}
+.topbox{
+  margin: 10px;
+  width: auto;
+  height: 40rem;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+#slideimage{
+  border-radius: 5%;
+  /* background-color: #000; */
+  /* margin: 10rem; */
+}
+.toptext{
+  height: 25rem;
+  margin: 1% 10% 1% 10%;
+  padding-left: 20px;
+  overflow: hidden;
+  border-left: solid white 1px;
+  width: 90%;
+  background-color: #000;
+  margin: 1rem 10rem 1rem 1rem;
+  /* padding: 1rem 2rem 2rem 2rem; */
+  /* border-radius: 5%; */
+  transition: 0.3s;
+}
+.topposs{
+  
+  margin: 1% 10% 1% 10%;
+  padding-left: 20px;
+  overflow: hidden;
+  /* border-left: solid white 1px; */
+  width: 40%;
+  background-color: #000;
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 1rem 2rem 2rem 2rem;
+  border-radius: 5%;
+  transition: 0.3s;
+}
+/* .topposs:hover{
+  box-shadow: 0rem 0.0rem 0px 0.5rem #fff;
+} */
+p:hover, h2:hover, li:hover{
+  border-bottom: solid #ffffff 1px;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  background: #333;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #222;
+  border-radius: 6px;
+  border: 3px solid #333;
+}
+::-webkit-scrollbar-button{
+  background-color: #222;
+  border-radius: 6px;
+  border: 3px solid #333;
+}
+#slideshow {
+  margin: 1% 10% 1% 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 40rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s, transform 1s;
+  transform: translateX(-100%); /* Start off-screen to the left */
+  /* background-color: #fff; */
+}
+
+.slide-active {
+  opacity: 1;
+  transform: translateX(0); /* Slide in from left */
+}
+
+.slide-leave {
+  opacity: 0;
+  transform: translateX(100%); /* Slide out to the right */
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+/* @media (min-width: 600px) {
+  .row {
+      display: flex;
+      flex-direction: column;
+  }
+} */
+@media (max-width: 906px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  #slideshow{
+    height: 20rem;
+  }
+  .topposs{
+    width: 70%;
+  }
+}
+div p span {
+  border-bottom: 1px solid black; /* Adjust the style of the underline as needed */
+  cursor: pointer;
+}
+
+div p {
+  display: inline; /* This makes sure the underline doesn't extend to the full width */
+}
